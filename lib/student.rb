@@ -68,7 +68,6 @@ def self.find_by_name(name)
   sql  = "SELECT* FROM students WHERE name = ?"
   result = DB[:conn].execute(sql, stored_name)
   student = self.new_from_db(result[0])
-  binding.pry
   student
 end
 
