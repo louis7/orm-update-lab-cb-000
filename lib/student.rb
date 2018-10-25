@@ -69,7 +69,6 @@ def self.find_by_name(name)
   result = DB[:conn].execute(sql, stored_name).flat
   student = self.new(result)
   student
-  binding.pry
 end
 
 
