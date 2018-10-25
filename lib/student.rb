@@ -64,9 +64,9 @@ end
 
 
 def self.find_by_name(name)
-  stored_name=name
-  sql = "SELECT* FROM students WHERE name = ?"
-  DB[:conn].execute(sql, stored_name)
+  stored_name = name
+  sql  = "SELECT* FROM students WHERE name = ?"
+  result = DB[:conn].execute(sql, stored_name)
 
 end
 
